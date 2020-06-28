@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+ 
+
+
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  </style>
+
+
+
+
+
+
+
+
+    <title>Homepage</title>
+  </head>
+  <body  style="background-color:rgba(209, 209, 209, 0.774);">
+  
+  
+  <!-- Navbar    -->
+          <nav class="navbar navbar-inverse" style="padding: 6px;">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#" style="font-size: 30px;">EDU-PLANNER</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#" style="font-size: 20px; padding-left:40px;">Home</a></li>
+                        <li><a href="/colform" style="font-size: 20px; padding-left:40px;">Colleges</a></li>
+                        <li><a href="/schform" style="font-size: 20px; padding-left:40px;">Schools</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/aboutus" style="font-size: 18px; padding-right:40px;"><span class="glyphicon glyphicon-log-in"></span> About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+  
+  
+  
+<!--registration form part-->
+
+                <form action="/registration" method="POST">
+                  <div class="container">
+                    <h1>Register</h1>
+                    <p>Please fill in this form to provide your details.</p>
+                    <hr>
+                
+                    <label><b>School Name</b></label>
+                    <input type="text" placeholder="School Name" name="name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                
+                    <label ><b>Address</b></label>
+                    <input type="text" placeholder="Address" name="address" required>
+                
+                    <label ><b>Fees</b></label>
+                    <input type="text" placeholder="Fees" name="fee" required>
+
+                    <label><b>School Website</b></label>
+                    <input type="text" placeholder="School Website" name="website" required>
+
+                    <label><b>Pin-Code</b></label>
+                    <input type="text" placeholder="Pin-Code" name="pincode" required>
+
+
+                    <label><b>rank</b></label>
+                    <input type="text" placeholder="rank" name="rank" required>
+                    <hr>
+                    
+                
+                    <button type="submit" class="registerbtn">Register</button>
+                  </div>
+                  
+                  
+                </form>
+                
+
+
+
+
+
+                
+     <!-- Footer -->
+     <footer class="page-footer font-small "  style="position: float;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(35, 227, 131);
+     color: white;
+     text-align: center;
+     height:100px;">
+     
+                                   
+                                     <p  style="padding-top:15px;">Find us on social media.</p>
+                       <!-- Grid row-->
+                       <div class="row justify-content-md-center" style="padding-top:15px;">
+                 
+                                   
+                     
+                                            
+                                                     
+                             <a href="https://www.facebook.com">
+                                             <i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>         
+                             </a>
+                             <!-- Twitter -->
+                             <a href="https://www.twitter.com">
+                               <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                             </a>
+                     
+                             <!-- Google +-->
+                             
+                             <a href="https://www.gmail.com">
+                               <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                             </a>
+                             <!--Linkedin -->
+                             <a href="https://www.linkedin.com">
+                               <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                             </a>
+     
+                             <!--Instagram-->
+             
+                             <a href="https://www.instagram.com">
+                               <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                             </a>
+                            
+                    
+                        
+                      
+                 
+                     </div>
+                     <!-- Footer Elements -->
+                 
+                    
+                    
+                 
+                   </footer>
+                   <!-- Footer -->
+
+
+</body>
+</html>
+
+
+
